@@ -9,13 +9,8 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
-import org.mockito.Mockito.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import org.springframework.http.HttpStatus;
-import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.web.context.WebApplicationContext;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,5 +49,31 @@ public class AccountRestControllerTest {
     public void  saveAccountTest(){
         Assertions.assertEquals(controller.saveAccount(account).getStatusCode(), HttpStatus.OK);
     }
+
+    @Test
+    public void updateAccountIsNotPresentTest(){
+        Mockito.when(service.findAccountById(ID)).thenReturn(null);
+        Assertions.assertEquals(controller.updateAccount(ID,account).getStatusCode(),HttpStatus.NOT_FOUND);
+    }
+
+    @Test
+    public void updateAccountIsPresentTest(){
+        Mockito.when(service.findAccountById(ID)).thenReturn(account);
+        Assertions.assertEquals(controller.updateAccount(ID,account).getStatusCode(),HttpStatus.OK);
+    }
+
+    @Test
+    public void deleteAccountIsNotPresentTest(){
+        Mockito.when(service.findAccountById(ID)).thenReturn(null);
+        Assertions.assertEquals(controller.deleteAccount(ID).getStatusCode(),HttpStatus.NOT_FOUND);
+    }
+
+    @Test
+    public void deleteAccountIsPresentTest(){
+        Mockito.when(service.findAccountById(ID)).thenReturn(account);
+        Assertions.assertEquals(controller.deleteAccount(ID).getStatusCode(),HttpStatus.OK);
+    }
+
+
 
 }
