@@ -8,6 +8,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="15" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_DATA_SOURCES" value="true" />
@@ -26,12 +29,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1XPymGUv6GQogbAFNxjAEm6PxxS" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -42,10 +53,21 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.bkn.amazonclient.account_service.repository" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,7 +81,87 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.AccountRestControllerTest.saveAccountTest">
+    <configuration name="AccountRestControllerTest.getAccountByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bkn.amazonclient.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bkn.amazonclient.account_service" />
+      <option name="MAIN_CLASS_NAME" value="com.bkn.amazonclient.account_service.AccountRestControllerTest" />
+      <option name="METHOD_NAME" value="getAccountByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountRestControllerTest.getAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bkn.amazonclient.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bkn.amazonclient.account_service" />
+      <option name="MAIN_CLASS_NAME" value="com.bkn.amazonclient.account_service.AccountRestControllerTest" />
+      <option name="METHOD_NAME" value="getAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountRestControllerTest.saveAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bkn.amazonclient.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bkn.amazonclient.account_service" />
+      <option name="MAIN_CLASS_NAME" value="com.bkn.amazonclient.account_service.AccountRestControllerTest" />
+      <option name="METHOD_NAME" value="saveAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceApplicationTests.deleteAccountByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bkn.amazonclient.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bkn.amazonclient.account_service" />
+      <option name="MAIN_CLASS_NAME" value="com.bkn.amazonclient.account_service.AccountServiceApplicationTests" />
+      <option name="METHOD_NAME" value="deleteAccountByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AccountServiceApplicationTests.findAccountByIdTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="account_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bkn.amazonclient.account_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.bkn.amazonclient.account_service" />
+      <option name="MAIN_CLASS_NAME" value="com.bkn.amazonclient.account_service.AccountServiceApplicationTests" />
+      <option name="METHOD_NAME" value="findAccountByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AccountServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="account_service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bkn.amazonclient.account_service.AccountServiceApplication" />
@@ -67,6 +169,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductserviceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="productservice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.edu.cs.miu.product.productservice.ProductserviceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AccountRestControllerTest.saveAccountTest" />
+        <item itemvalue="JUnit.AccountRestControllerTest.getAll" />
+        <item itemvalue="JUnit.AccountRestControllerTest.getAccountByIdTest" />
+        <item itemvalue="JUnit.AccountServiceApplicationTests.deleteAccountByIdTest" />
+        <item itemvalue="JUnit.AccountServiceApplicationTests.findAccountByIdTest (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -79,6 +197,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580962182091</updated>
       <workItem from="1580962184290" duration="12096000" />
+      <workItem from="1581123680258" duration="10679000" />
+      <workItem from="1581280586219" duration="7437000" />
     </task>
     <servers />
   </component>
@@ -90,10 +210,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/account_service$AccountServiceApplicationTests_findAccountByIdTest.ic" NAME="AccountServiceApplicationTests.findAccountByIdTest Coverage Results" MODIFIED="1581144805905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bkn.amazonclient.account_service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/account_service$AccountServiceApplicationTests_deleteAccountByIdTest.ic" NAME="AccountServiceApplicationTests.deleteAccountByIdTest Coverage Results" MODIFIED="1581287069952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bkn.amazonclient.account_service.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/account_service$AccountRestControllerTest_getAccountByIdTest.ic" NAME="AccountRestControllerTest.getAccountByIdTest Coverage Results" MODIFIED="1581301117920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.bkn.amazonclient.account_service.*</FILTER>
+    </SUITE>
   </component>
 </project>

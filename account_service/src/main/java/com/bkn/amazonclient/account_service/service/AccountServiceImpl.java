@@ -24,17 +24,17 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account saveAccount(Account account) {
-        return null;
+        return repository.save(account);
     }
 
     @Override
     public Account findAccountById(String id) {
-        return null;
+        return repository.findById(id).orElse(null);
     }
 
     @Override
     public void deleteAccountById(String id) {
-
+        repository.deleteById(id);
     }
 
     @Override

@@ -2,6 +2,9 @@ package com.bkn.amazonclient.account_service.controller;
 
 import com.bkn.amazonclient.account_service.model.Account;
 import com.bkn.amazonclient.account_service.repository.AccountRepository;
+import com.bkn.amazonclient.account_service.service.AccountService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 
@@ -11,19 +14,26 @@ import java.util.List;
 @RequestMapping("/account")
 public class AccountRestController {
 
-    private AccountRepository accountRepository;
+    private AccountService accountService;
 
-    public AccountRestController(AccountRepository accountRepository) {
-        this.accountRepository = accountRepository;
+    public AccountRestController(AccountService accountService) {
+        this.accountService = accountService;
     }
 
     @GetMapping("/all")
-    public List<Account> getAll(){
-        return accountRepository.findAll();
+    public ResponseEntity<List<Account>> getAll(){
+        return new ResponseEntity<List<Account>>(accountService.getAllAccounts(), HttpStatus.OK);
     }
 
     @PostMapping("/save")
-    public Account saveAccount(@RequestBody Account account){
-        return accountRepository.save(account);
+    public ResponseEntity<Account> saveAccount(@RequestBody Account account){
+        return new ResponseEntity<Account>(accountService.saveAccount(account),HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Account> getAccountById(@PathVariable String id){
+
+        return new ResponseEntity<>(accountService.findAccountById(id),HttpStatus.OK);
+
     }
 }
