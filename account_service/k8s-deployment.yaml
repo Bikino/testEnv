@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: accountservice-deployment
+  labels:
+    app: accountservice
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: accountservice
+  template:
+    metadata:
+      labels:
+        app: accountservice
+
+    spec:
+      containers:
+        - name: accountservice
+          image: ibikino/accountservice:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: KEY1
+              valueFrom:
+                configMapKeyRef:
+                  name: accountservice-config
+                  key: someKey1
+            - name: NEXT_SERVICE
+              valueFrom:
+                configMapKeyRef:
+                  name: accountservice-config
+                  key: nextService
+            - name: SERVICE_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: accountservice-secrets
+                  key: service-api-key
+            #MYSQL
+            - name: MYSQL_HOST
+              value: accountservice-db
+
+            - name: MYSQL_USER
+              value: root
+            - name: MYSQL_PORT
+              value: "8085"
+
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: accountservice-secrets
+                  key: mysql-root-password

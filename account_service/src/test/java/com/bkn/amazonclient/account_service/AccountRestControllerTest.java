@@ -73,7 +73,4 @@ public class AccountRestControllerTest {
         Mockito.when(service.findAccountById(ID)).thenReturn(account);
         Assertions.assertEquals(controller.deleteAccount(ID).getStatusCode(),HttpStatus.OK);
     }
-
-
-
 }

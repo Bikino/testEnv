@@ -49,8 +49,12 @@ class AccountServiceApplicationTests {
     @Test
     public void findAccountByIdTest() {
         Account acc = Account.builder().id("111").firstName("Briella").lastName("Shamika").build();
+
+
         Mockito.when(repository.findById("111")).thenReturn(Optional.of(acc));
+
         assertEquals(acc,accountService.findAccountById("111"));
+
      }
 
     @Test
