@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2e8ee50-9a58-41fe-b305-071525349ac7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../productservice/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../productservice/.idea/encodings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b2e8ee50-9a58-41fe-b305-071525349ac7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1581280586219" duration="11331000" />
       <workItem from="1581642673049" duration="3912000" />
       <workItem from="1581811000731" duration="3901000" />
-      <workItem from="1582056999012" duration="3103000" />
+      <workItem from="1582056999012" duration="3852000" />
     </task>
     <servers />
   </component>
